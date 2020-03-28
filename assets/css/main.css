@@ -1,6 +1,219 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: poppins, helvetica, Arial, sans-serif;
+/* Macro class */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: poppins, helvetica, Arial, sans-serif;
+  color: #504d4d;
 }
 
+body {
+  background-color: #fbfbfb;
+}
+
+header {
+  height: 100vh;
+  background-image: linear-gradient(
+      180deg,
+      rgba(240, 240, 240, 0.3),
+      rgba(240, 240, 240, 0.3)
+    ),
+    url(../img/hero-image.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+footer{
+    text-align: center;
+    padding: 50px;
+    
+}
+
+
+h1 {
+  color: black;
+}
+
+p {
+  font-size: 14px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: #FBFBFB;
+  border-radius: 28px;
+  display: inline-block;
+  cursor: pointer;
+  color: #333333;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 10px 25px;
+  text-decoration: none;
+}
+.button:hover {
+  background-color: black;
+  color: #fbfbfb;
+  transition: ease-in-out 310ms;
+}
+.button:active {
+  position: relative;
+  top: 1px;
+}
+
+/* Micro class */
+
+.mycontain {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Nav Bar */
+
+.logo {
+  height: 70px;
+  margin-top: 20px;
+}
+
+.nav-link {
+  display: inline;
+  text-decoration: none;
+  color: #504d4d;
+  padding: 25px;
+  margin-top: 20px;
+}
+
+.nav-link:hover {
+  color: #B01317;
+}
+
+.floating {
+  float: right;
+}
+
+/* End Nav Bar */
+
+.hero {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.text-align {
+  text-align: center;
+}
+
+/* float 1st section */
+.float-parent {
+  height: 500px;
+}
+
+.float-parent:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.leftfloat {
+  float: left;
+  height: 100%;
+  width: 50%;
+}
+
+.leftfloat::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.rightfloat {
+  float: left;
+  height: 100%;
+  width: 50%;
+}
+
+.rightloat::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row {
+  height: 50%;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.rightfloat-box {
+  width: 50%;
+  height: 100%;
+  float: right;
+  padding: 45px;
+  text-align: center;
+}
+
+.leftfloat-box {
+  height: 100%;
+  width: 50%;
+  float: left;
+  padding: 45px;
+}
+
+.redbg{
+    background-color: #B01317;
+}
+
+.white{
+    color: #FBFBFB;
+}
+
+.black{
+    color: black;
+}
+
+/* background with image */
+.red-jordan {
+  background-image: url(../img/jordan-red.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.supreme-jordan {
+  background-image: url(../img/supreme-jordan1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.map-img {
+  background-image: url(../img/map.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.jordan4pairs-img {
+  background-image: url(../img/jordan-4pairs.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.jordanbox-img {
+  background-image: url(../img/jordan-box.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.jordanwatch-img {
+  background-image: url(../img/jordan-watch.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.drawing-img {
+    background-image: url(../img/drawing.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+/* End background with imagge */
